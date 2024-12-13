@@ -9,9 +9,15 @@ CHANNEL_ID = int(os.getenv('CHANNEL_ID'))  # Set your channel ID in Railway envi
 
 # Dictionary of text and links
 text_links = {
-    'captain': 'https://www.google.com',
-    'captain2': 'https://www.facebook.com',
-    'captain3': 'https://www.flipkart.com'
+    '51game': 'https://51gameappinin.com/#/register?invitationCode=83363102977',
+    'bswin': 'https://bslotto.com/#/register?invitationCode=86787104955',
+    '82bet': 'https://82bet.com/#/register?invitationCode=583873088657',
+    'okwin': 'https://www.okwin.la/#/register?invitationCode=715142961253',
+    'Deltin': 'http://deltin.bet/register?key=1000277575',
+    'Raja luck': 'https://rajaluck.com/#/register?invitationCode=tleWe85176',
+    'In99': 'https://in999.club/#/register?invitationCode=13587102403',
+    'sonsy': 'https://www.sonsy1.in/#/register?invitationCode=58334104548',
+    '1010game': 'https://1014game.in/#/register?invitationCode=372441180074',
 }
 
 # Initialize the client

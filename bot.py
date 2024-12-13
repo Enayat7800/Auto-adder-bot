@@ -1,11 +1,11 @@
-from telethon import TelegramClient, events, sync
-import re
+import os
+from telethon import TelegramClient, events
 
-# Replace with your actual values!
-API_ID = 1234567  # Your API ID
-API_HASH = 'your_api_hash'  # Your API HASH
-BOT_TOKEN = 'your_bot_token'  # Your Bot Token
-CHANNEL_ID = -1001234567890  # Your channel ID
+# Replace hardcoded values with environment variables
+API_ID = int(os.getenv('API_ID'))  # Set in Railway environment variables
+API_HASH = os.getenv('API_HASH')  # Set in Railway environment variables
+BOT_TOKEN = os.getenv('BOT_TOKEN')  # Set in Railway environment variables
+CHANNEL_ID = int(os.getenv('CHANNEL_ID'))  # Set your channel ID in Railway environment variables
 
 # Dictionary of text and links
 text_links = {
@@ -15,7 +15,7 @@ text_links = {
 }
 
 # Initialize the client
-client = TelegramClient('bot_session', API_ID, API_HASH)
+client = TelegramClient('bot_session', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 @client.on(events.NewMessage(chats=CHANNEL_ID))
 async def add_links(event):
@@ -23,7 +23,7 @@ async def add_links(event):
     for text, link in text_links.items():
         if message_text == text:
             new_message_text = f"{text}\n{link}"
-            await event.edit(new_message_text, parse_mode=None) # Removed 'html' parse mode
+            await event.edit(new_message_text, parse_mode=None)  # Removed 'html' parse mode
             break
 
 # Start the bot

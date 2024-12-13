@@ -33,7 +33,7 @@ text_links = {
     'Lucky11': 'https://lucky11a.in/#/register?invitationCode=58385216389',
     'Win101': 'https://Win101.bet/#/register?invitationCode=31831271287',
     'Sikkim': 'https://sikkim1.com/#/register?invitationCode=25621112253',
-     'NN game': 'https://nngames.in/#/register?invitationCode=47257104541',
+    'NN game': 'https://nngames.in/#/register?invitationCode=47257104541',
     'Raja wager': 'https://rajawager.com/#/register?invitationCode=3637791430',
     'Goa game': 'https://goa888.vip/#/register?invitationCode=576654552342',
     'Tc lottery': 'https://9987up.co/#/register?invitationCode=582475880239',
@@ -50,14 +50,15 @@ async def add_links(event):
     new_message_text = message_text
     for text, link in text_links.items():
         # New Regex Pattern :  Match text with spaces. `(?i)` for case-insensitive
-         pattern = re.compile(r'(?i)' + re.escape(text))
-         match = pattern.search(message_text)
+        pattern = re.compile(r'(?i)' + re.escape(text))
+        match = pattern.search(message_text)
 
         if match:
             new_message_text = re.sub(pattern, f"{text}\n{link}", new_message_text, 1)
 
     if new_message_text != message_text:
       await event.edit(new_message_text, parse_mode=None)
+
 
 # Start the bot
 with client:

@@ -50,7 +50,7 @@ async def add_links(event):
     new_message_text = message_text
     for text, link in text_links.items():
         # Create a regex pattern to find the text with optional spaces
-        pattern = re.compile(r'\b' + re.escape(text) + r'\b', re.IGNORECASE)
+        pattern = re.compile(r'\b' + re.escape(text.replace(" ",r'\s*')) + r'\b', re.IGNORECASE)
         
         match = pattern.search(message_text)
         if match:

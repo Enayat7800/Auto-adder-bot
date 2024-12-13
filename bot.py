@@ -11,9 +11,9 @@ CHANNEL_ID = int(os.getenv('CHANNEL_ID'))
 # Dictionary of text and links
 text_links = {
     '51game': 'https://51gameappinin.com/#/register?invitationCode=83363102977',
-    'bswin': 'https://bslotto.com/#/register?invitationCode=86787104955',
+    'Bswin': 'https://bslotto.com/#/register?invitationCode=86787104955',
     '82bet': 'https://82bet.com/#/register?invitationCode=583873088657',
-    'okwin': 'https://www.okwin.la/#/register?invitationCode=715142961253',
+    'Okwin': 'https://www.okwin.la/#/register?invitationCode=715142961253',
     'Deltin': 'http://deltin.bet/register?key=1000277575',
     'Raja luck': 'https://rajaluck.com/#/register?invitationCode=tleWe85176',
     'In99': 'https://in999.club/#/register?invitationCode=13587102403',
@@ -39,6 +39,8 @@ text_links = {
     'Tc lottery': 'https://9987up.co/#/register?invitationCode=582475880239',
     '55club': 'https://55club08.in/#/register?invitationCode=25173833647',
     'Dream99': 'https://dream99.info/#/register?invitationCode=58173619026',
+    'Dmwin': 'https://dmwin0.com/#/register?invitationCode=41854135154',
+    'Daman': 'https://2india.in/#/register?invitationCode=722177565699',
 }
 
 # Initialize the client

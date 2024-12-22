@@ -39,6 +39,7 @@ text_links = {
     'Tc lottery': 'https://9987up.co/#/register?invitationCode=582475880239',
     '55club': 'https://55club08.in/#/register?invitationCode=25173833647',
     'Dream99': 'https://dream99.info/#/register?invitationCode=58173619026',
+    'Bbgo': 'https://bbgo02.vip/#/register?invitationCode=644451001470',
 }
 
 # Initialize the client

@@ -40,6 +40,7 @@ text_links = {
     '55club': 'https://55club08.in/#/register?invitationCode=25173833647',
     'Dream99': 'https://dream99.info/#/register?invitationCode=58173619026',
     'Bbgo': 'https://bbgo02.vip/#/register?invitationCode=644451001470',
+    'Dmwin': 'https://dmwin1.com/#/register?invitationCode=41854135154',
 }
 
 # Initialize the client

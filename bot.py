@@ -10,7 +10,7 @@ CHANNEL_ID = int(os.getenv('CHANNEL_ID'))
 
 # Dictionary of text and links
 text_links = {
-    '51game': 'https://51gameappinin.com/#/register?invitationCode=83363102977',
+    '51game': 'https://51game7.in/#/register?invitationCode=83363102977',
     'Bswin': 'https://www.bswin44.com/#/register?invitationCode=86787104955',
     '82bet': 'https://www.82lottery6.in/#/register?invitationCode=164681443161',
     'Okwin': 'https://okwinslots1.com/#/register?invitationCode=77634420458',
